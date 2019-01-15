@@ -28,7 +28,7 @@ def execute_sql():
 def close_connection(exception):
 	connection = getattr(g, '_connection', None)
 	if connection != None:
-		connection.close()
+		connection.close() 
 
 
 @app.route('/')
